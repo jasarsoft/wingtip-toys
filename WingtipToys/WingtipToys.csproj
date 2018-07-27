@@ -171,6 +171,7 @@
     <Content Include="Account\TwoFactorAuthenticationSignIn.aspx" />
     <Content Include="Account\VerifyPhoneNumber.aspx" />
     <Content Include="AddToCart.aspx" />
+    <Content Include="Admin\AdminPage.aspx" />
     <Content Include="Checkout\CheckoutCancel.aspx" />
     <Content Include="Checkout\CheckoutComplete.aspx" />
     <Content Include="Checkout\CheckoutError.aspx" />
@@ -188,6 +189,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="Account\Web.config" />
     <Content Include="Checkout\Web.config" />
+    <Content Include="Admin\Web.config" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Images\logo.jpg" />
     <Content Include="ProductDetails.aspx" />
@@ -354,6 +356,13 @@
     </Compile>
     <Compile Include="AddToCart.aspx.designer.cs">
       <DependentUpon>AddToCart.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\AdminPage.aspx.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\AdminPage.aspx.designer.cs">
+      <DependentUpon>AdminPage.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">
