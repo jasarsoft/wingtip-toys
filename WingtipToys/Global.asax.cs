@@ -26,7 +26,7 @@ namespace WingtipToys
 
             using (var context = new ProductContext())
             {
-                context.Database.Initialize(false);
+                context.Database.Initialize(true);
             }
         }
     }
