@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using WingtipToys.Models;
+using WingtipToys.Logic;
 
 
 
@@ -28,6 +29,10 @@ namespace WingtipToys
             {
                 context.Database.Initialize(true);
             }
+
+            // Create the custom role and user.
+            RoleActions roleActions = new RoleActions();
+            roleActions.AddUserAndRole();
         }
     }
 }
